@@ -1,34 +1,75 @@
 html {
     font-family: "Karla", serif;
     font-size: 14px;
-    background-color: ;
+    background-color: #DA9F93;
 }
 h1 {
     font-size: 40px;
-    text-align: center;
-    font-family: "Bagel Fat One", serif;;
-  }
-h2 {
-    font-size: 40px;
-    text-align: center;
+    text-align: left;
     font-family: "DynaPuff", serif;
-}
-  
+    padding-left: 35px;
+  }
+
 p,
 li {
-line-height: 2;
-letter-spacing: 1px;
-
+    line-height: 2;
+    letter-spacing: 1px;
 }
 img {
     width:500px;
 }
 .box {
-    width: 1195px;
+    width: 1452px;
     height: 50 px;
     background-color: #C1CE9B;
     border: 5px #2F4858;
     padding: 10px;
     margin-top: 20%;
     text-align: center;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background-color: #F4BFDB;
+    position: sticky;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.logo {
+    float: left;
+    width: 10%;
+    height: 10%;
+    padding: 13px 0;
+}
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+/*    margin: 0 35px; same thing as below*/
+    margin-left: 70px;
+    padding-top: 25px;
+}
+nav a {
+    color: #49475B;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C7EBF0;
+    padding: 15px;
+    background-color: #d87093;
+    text-decoration: none;
 }
