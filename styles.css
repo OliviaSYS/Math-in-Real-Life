@@ -9,7 +9,14 @@ h1 {
     font-family: "DynaPuff", serif;
     padding-left: 35px;
   }
-
+h3 {
+    font-size: 20px;
+}
+div.title {
+    font-size: 17px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
 p,
 li {
     line-height: 2;
@@ -72,4 +79,34 @@ nav a:hover {
     padding: 15px;
     background-color: #d87093;
     text-decoration: none;
+}
+
+div.careerGallery {
+    margin-left: 210px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2%;
+    border: 2px dotted #F4BFDB;
+    border-radius: 8px;
+    float: left;
+    width: 23%;
+    height: 200px;
+    overflow-y: scroll;
+    
+}
+
+div.careerGallery:hover {
+    border: 3.5px dashed #d87093;
+    border-radius: 12px;
+    width: 23%;
+    overflow-y: scroll;
+}
+
+div.careerGallery img {
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+    border: 2px solid #F4BFDB;
+    margin-top: 5px;
+    margin-bottom: 17px;
 }
