@@ -2,15 +2,22 @@ html {
     font-family: "Karla", serif;
     font-size: 14px;
     background-color: #DA9F93;
+    color: #292736;
 }
 h1 {
     font-size: 40px;
     text-align: left;
     font-family: "DynaPuff", serif;
     padding-left: 35px;
+    color: #05031A;
   }
 h3 {
     font-size: 20px;
+    color: #05031A;
+}
+h2 {
+    font-size: 30px;
+    color: #05031A;
 }
 div.title {
     font-size: 17px;
@@ -21,18 +28,33 @@ p,
 li {
     line-height: 2;
     letter-spacing: 1px;
+    padding-left: 35px;
 }
 img {
     width:500px;
 }
-.box {
-    width: 1452px;
+.curvedbox {
+    width: 43%;
     height: 50 px;
+    border-radius: 13%;
     background-color: #C1CE9B;
     border: 5px #2F4858;
     padding: 10px;
-    margin-top: 20%;
+    margin-top: 1.5%;
     text-align: center;
+    margin-left: 35px;
+}
+.roundbox {
+    width: 43%;
+    height: 50 px;
+    border-radius: 25px;
+    background-color: #F5E2C8;
+    border: 5px #767522;
+    padding: 10px;
+    margin-top: 1.5%;
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 50px;
 }
 .container {
     width: 80%;
@@ -41,6 +63,8 @@ img {
 header {
     background-color: #F4BFDB;
     position: sticky;
+    top: 0;
+    border-radius: 20px;
 }
 header::after {
     content: '';
@@ -52,6 +76,11 @@ header::after {
     width: 10%;
     height: 10%;
     padding: 13px 0;
+}
+.mathpic {
+    float: right;
+    margin-right: 80px;
+    padding: 2%;
 }
 nav {
     float: right;
@@ -78,6 +107,7 @@ nav a:hover {
     color: #C7EBF0;
     padding: 15px;
     background-color: #d87093;
+    border-radius: 5px;
     text-decoration: none;
 }
 
