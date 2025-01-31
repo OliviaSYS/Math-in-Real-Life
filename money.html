@@ -1,39 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DynaPuff:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mansalva&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div class="container">
 
-        <a target="_top" href="index.html">
-          <img src="Images/MIRL.png" alt="MIRL Pi Logo" class="logo">
-        </a>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DynaPuff:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mansalva&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+</head>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="money.html">Money</a></li>
-            <li><a href="ratios.html">Ratios</a></li>
-            <li><a href="time.html">Time</a></li>
-            <li><a href="careers.html">Careers</a></li>
-          </ul>
-        </nav>
+<body>
+  <header>
+    <div class="container">
 
-      </div>
-    </header>
+      <a target="_top" href="index.html">
+        <img src="Images/MIRL.png" alt="MIRL Pi Logo" class="logo">
+      </a>
 
-    <h1>
-      Welcome to Math in Real Life!
-    </h1>
-    
-    <div class="curvedbox">
-      Math is the language of the universe
-      ~ Neil deGrasse Tyson
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="money.html">Money</a></li>
+          <li><a href="ratios.html">Ratios</a></li>
+          <li><a href="time.html">Time</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="activities.html">Activities</a></li>
+        </ul>
+      </nav>
+
     </div>
-    </body>
+  </header>
+
+  <h1>
+    Learn About Financial Living with Math!
+  </h1>
+  
+  <div class="curvedbox">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+    <img src="Images/dollar.png" alt="Dollar image" class="cookie">
+  </div>
+  <p>The most common numbers appear in our finances: when <b>shopping or saving</b>.</p>
+  <h2 class="h2indent">Shopping</h2>
+  <p>Mathematics that occurs in shopping often relates to a budget and different taxes.</p>
+  <p>To calculate the <em>net cost</em>, we have different scenarios with the <em>pre-tax</em> cost of the item as
+    <b>x</b>:
+  </p>
+  <dl>
+    <dt>
+      <ol>
+        <li>Our first version is when you only have one tax percentage (call it <b>a%</b>). You can either:</li>
+        <ol>
+          <li>Use a <em>"direct"</em> calculation way shown below</li>
+          <dl>
+            <dt><em>Net cost =</em> x * (100 - a)%</dt>
+            <dd>Thinking process: We subtract a from 100 to have the percentage that remains after subracting
+              tax,<br>then we multiply by x with that resulting percentage</dd>
+          </dl>
+          <li>Or use a <em>"complementary"</em> calculation way that may be slower, shown below</li>
+          <dl>
+            <dt><em>Net cost =</em> x - (x * a%)</dt>
+            <dd>Thinking process: We calculate the tax, then subtract it from x</dd>
+          </dl>
+        </ol>
+        <li>Our second scenario is when you have <b>more than</b> one tax percentage. Suppose we have two taxes:
+          <b>b%</b> and
+          <b>c%</b>
+        </li>
+        <dl>
+          <dd>Note: The calculations depend on the policies in the shopping area.</dd>
+          <dt>Most places have the <em>Net cost =</em> x - [x * (b%)] - [x * (c%)] = x (100 - b - c)%, in which you
+            apply
+            b and c tax to x</dt>
+          <dd>Other places have the <em>Net cost =</em> x * (100 - b)% * (100 - c)%, in which you apply, b tax to x,
+            then
+            apply c tax to the result after b tax</dd>
+          <dt>Note: don't confuse these two as they are totally different cases!</dt>
+        </dl>
+      </ol>
+    </dt>
+  </dl>
+  <p>After, we compare the <em>net cost</em> and our budget.<br>If the <em>net cost</em> is <b>less than or equal to</b>
+    our budget, we can afford it. Otherwise, we can't.</p>
+  <h2 class="h2indent">Saving</h2>
+  <!--Beginning of saving-->
+  <p>When you set aside money <em>(principal amount)</em> in your savings account for a period of time, <br>and if you
+    give
+    your financial institution permission to use your investment for loans, the institution will pay you back your
+    <em>principal
+      amount (name it <b>z</b>)</em> plus <em>annual interest (name it <b>d%</b>).</em>
+  </p>
+  <p>Often, you choose to save for a number of years (name it <b>y</b>) that earns you your desired <em>total
+      sum</em>, which can be compared to the <em>total amount</em> you planned to have (your <em>total sum</em> probably
+    won't be spot on to
+    your <em>total planned amount</em>).<br>We can calculate it two ways as shown below,<br></p>
+  <dl>
+    <dd>
+      <ol>
+        <li>Use a <em>"direct"</em> calculation way:</li>
+        <dl>
+          <dt><em>Total sum =</em> z * (100 + d)% * y</dt>
+          <dd>Thinking process: We add a to 100 to have the percentage that is there after adding annual interest,<br>then we
+            multiply by y to calculate the percentage of the total after the years of annual interest, which is then multiplied
+            by x
+            to calculate the total amount.</dd>
+        </dl>
+        <li>Or use a <em>"complementary"</em> calculation way:</li>
+        <dl>
+          <dt><em>Total sum =</em> z + (z * d% * y)</dt>
+          <dd>Thinking process: We calculate the total annual interest rate considering the number of years and the principal
+            amount, then add to the
+            principal amount (z) to have the total.</dd>
+        </dl>
+      </ol>
+      <p>After, we compare the <em>total sum to our total planned amount</em>.<br>If the <em>total sum</em> is
+        <b>greater
+          than or equal to</b>
+        our <em>planned total</em>, we are successful. Otherwise, we should invest the money for more years.</p>
+    </dd>
+  </dl>
+  <br>
+  <h3 class="h3indent">Go to Activities and select "shopping" to test your tax calculations, or select "saving" to
+    test
+    your interest rate calculations!</h3>
+  <br>
+  <footer>Made by Olivia P.</footer>
+
+</body>
+
 </html>

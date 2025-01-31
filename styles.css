@@ -1,3 +1,12 @@
+
+/*FREE WAVY UNDERLINED CODE FOR TEXT (below): works, emphasizes, great!
+HTML CODE: <p><span class="wavy">[insert text]</span></p>*/
+.wavy {
+    text-decoration-skip-ink: none;
+    text-decoration-line: underline;
+    text-decoration-color: #2F4858;
+    text-decoration-style: wavy;
+}
 html {
     font-family: "Karla", serif;
     font-size: 14px;
@@ -19,19 +28,39 @@ h2 {
     font-size: 30px;
     color: #05031A;
 }
+.h2indent {
+    font-size: 30px;
+    color: #05031A;
+    padding-left: 35px;
+}
+.h3indent {
+    font-size: 20px;
+    color: #05031A;
+    padding-left: 35px;
+}
 div.title {
     font-size: 17px;
     margin-top: 7px;
     margin-bottom: 5px;
 }
 p,
-li {
+li,
+dt,
+dl {
     line-height: 2;
     letter-spacing: 1px;
     padding-left: 35px;
 }
 img {
     width:500px;
+}
+footer {
+    text-align: center;
+    padding: 50px 100px 50px 100px;
+    background-color:#61A0AF;
+    color:#292736;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 .curvedbox {
     width: 43%;
@@ -81,6 +110,22 @@ header::after {
     float: right;
     margin-right: 80px;
     padding: 2%;
+}
+.centralmathpic {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 15%;
+    width: 15%;
+    background-color:#F5E2C8;
+    border: 3px solid #2F4858;
+    border-radius: 13px;
+
+}
+.cookie {
+    height: 8%;
+    width: 8%;
 }
 nav {
     float: right;
