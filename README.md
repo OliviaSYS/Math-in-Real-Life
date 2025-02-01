@@ -2,7 +2,7 @@
 An informational website that features a variety of examples of math in real life!
 # 👀 Just a peek!
 Here's a screenshot of one of the sections!:
-![A screenshot of the Home page!]([image.png](https://cloud-cvdeibs11-hack-club-bot.vercel.app/0image.png)
+([A screenshot of the Home page!](https://cloud-cvdeibs11-hack-club-bot.vercel.app/0image.png))
 ## 😲 Features
 - Examples of math in REAL life such as:
   - Money
