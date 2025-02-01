@@ -1,37 +1,50 @@
-function runQuizTime() {
+var x=document.getElementById("quizTime");
+x.style.display = "none";
+
+function runQuizConversions() {
     var x=document.getElementById("quizTime");
     
     if (x.style.display === "none") {
         x.style.display = "block";
-        generateQuestion();
       } else {
         x.style.display = "none";
       }
 }
 
-function generateQuestion() {
-    const randomFahrenheit = Math.floor(Math.random() * 201) - 100;
-    const correctCelsuis = ((randomFahrenheit - 32) * 5 / 9);
-    document.getElementById("question").textContent = `Convert ${randomFahrenheit} °Fahrenheit to Celsius.`;
-    document.getElementById("question").dataset.correctAnswer = correctCelsius.toFixed(2);
-    document.getElementById("result").textContent = "";
-    document.getElementById("answer").value = "";
-  }
-function checkAnswer() {
-const userAnswer = parseFloat(document.getElementById("answer").value);
-const correctAnswer = parseFloat(document.getElementById("question").dataset.correctAnswer);
 
-if (isNaN(userAnswer)) {
-    document.getElementById("result").textContent = "Please enter a valid number.";
-    return;
+let num1 = 0;
+
+
+function loadQuestion() {
+    answer = document.getElementById("answer");
+    answer.value = "";
+    document.getElementById("next").disabled = true;
+    num1 = Math.floor(Math.random() * 201);
+    document.getElementById("question").textContent = "Convert " + String(num1)+"°F to °C";
 }
 
-if (Math.abs(userAnswer - correctAnswer) < 0.01) {
-    document.getElementById("result").textContent = "Correct! 🎉";
-} else {
-    document.getElementById("result").textContent = `Incorrect. The correct answer is ${correctAnswer.toFixed(2)} °C.`;
+function checkAnswer(answer) {
+    document.getElementById("next").disabled = false;
+    let solution = Math.floor((num1-32)*5/9);
+    if (answer == solution) {
+        $("#result").show();
+        $("#result").text("Correct!🎉");
+    } else {
+      $("#result").show();
+      $("#result").text(`Wrong 😢 The correct answer was: ${solution}.`);
+    }
 }
-}
-document.getElementById("checkAnswer").addEventListener("click", checkAnswer);
-window.onload = generateQuestion;    
 
+
+document.getElementById("next").addEventListener("click", function () {
+    loadQuestion();
+    $("#result").hide();
+});
+
+
+document.getElementById("checkAnswer").addEventListener("click", function () {
+    answer = document.getElementById("answer").value;
+    checkAnswer(answer);
+});
+
+loadQuestion();

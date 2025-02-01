@@ -168,6 +168,43 @@ div.careerGallery {
     height: 200px;
     overflow-y: scroll;
 }
+div.careerGallerycopy {
+    margin-left: 210px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2%;
+    border: 3px dotted #F4BFDB;
+    border-radius: 10px;
+    float: left;
+    width: 23%;
+    height: 200px;
+    overflow: hidden;
+}
+
+div.careerGallerycopy:hover {
+    border: 3px dashed #d87093;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+div.careerGallerybig {
+    margin-left: 210px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2%;
+    border: 3px dotted #F4BFDB;
+    border-radius: 10px;
+    float: left;
+    width: 64.2%;
+    height: 200px;
+    overflow: hidden;
+}
+
+div.careerGallerybig:hover {
+    border: 3px dashed #d87093;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
 
 div.careerGallery:hover {
     border: 3px dashed #d87093;
@@ -213,7 +250,35 @@ div.careerGallery img {
     font-family: "Karla", serif;
     font-size: 14px;
     background-color:#2F4858;
-    color: #C1CE9B;
+    color: #F4BFDB;
     border: 3px solid #F4BFDB;
     border-radius: 7px;
+}
+#checkAnswer {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: "Karla", serif;
+    font-size: 14px;
+    background-color:#C1CE9B;
+    color: #2F4858;
+    border: 3px solid #F4BFDB;
+    border-radius: 7px;
+}
+#next {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: "Karla", serif;
+    font-size: 14px;
+    background-color:#767522;
+    color: #F5E2C8;
+    border: 3px solid #2F4858;
+    border-radius: 7px;
+}
+#result {
+    margin-top: 7px;
+    margin-left: 35px;
+}
+
+::placeholder {
+    color:#F4BFDB;
 }
