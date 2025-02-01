@@ -13,7 +13,8 @@ Here's a screenshot of one of the sections!:
 - 🕶 Cool, responsive buttons that allow you to travel around various webpages
 - 📑 Informative examples to help your understanding
 - ✨ Beautiful user interface for ease of reading as the information transmits from your screen to your mind
+- 📜 Responsive quiz on knowledge learnt through the informational sections
 ## ⌨ Programming Languages
-- HTML
-- CSS
-- Javascript
+- HTML for the text
+- CSS to enhance content
+- Javascript for interactivity
