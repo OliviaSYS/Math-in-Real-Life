@@ -2,55 +2,66 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DynaPuff:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mansalva&family=Outfit:wght@100..900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math In Real Life</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DynaPuff:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mansalva&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="container">
+    <header>
+        <div class="container">
 
-      <a target="_top" href="index.html">
-        <img src="Images/MIRL.png" alt="MIRL Pi Logo" class="logo">
-      </a>
+            <a target="_top" href="index.html">
+                <img src="Images/MIRL.png" alt="MIRL Pi Logo" class="logo">
+            </a>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="money.html">Money</a></li>
-          <li><a href="ratios.html">Ratios</a></li>
-          <li><a href="time.html">Time</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="activities.html">Activities</a></li>
-        </ul>
-      </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="money.html">Money</a></li>
+                    <li><a href="ratios.html">Ratios</a></li>
+                    <li><a href="time.html">Time</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                </ul>
+            </nav>
 
+        </div>
+    </header>
+
+    <h1>
+        Enjoy These Activities!
+    </h1>
+
+    <div class="curvedbox">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
+        <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
     </div>
-  </header>
-
-  <h1>
-    Enjoy These Activities!
-  </h1>
-  
-  <div class="curvedbox">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-    <img src="Images/mathactivities.png" alt="Math book activities image" class="cookie">
-  </div>
-  <br>
-  <h3 class="h3indent">Try the activities above!</h3>
-  <br>
-  <footer>Made by Olivia P.</footer>
+    <button id="quizButton" onclick="runQuizTime()">Quiz_time (Show / Hide)</button>
+    <div id="quizTime">
+        <div id="question"></div>
+        <input id="answer" type="number" placeholder="Enter your answer">
+        <button id="checkAnswer">Check Answer</button>
+        <div id="result"></div>
+    </div>
+    <br>
+    <footer>Made by Olivia P.</footer>
 </body>
+
+<script src="activities.js"></script>
 
 </html>

@@ -187,3 +187,33 @@ div.careerGallery img {
     text-align: left;
     padding-left: 35px;
 }
+#quiz1 {
+    display: none;
+}
+#quizButton {
+    margin-top: 15px;
+    margin-left: 35px;
+    font-family: "Karla", serif;
+    font-size: 14px;
+    background-color:#F4BFDB;
+    color: #292736;
+    border: 3px solid #2F4858;
+    border-radius: 13px;
+    padding: 7px;
+}
+#question {
+    margin-top: 15px;
+    margin-left: 35px;
+    font-family: "Karla", serif;
+    font-size: 14px;
+}
+#answer {
+    margin-top: 15px;
+    margin-left: 35px;
+    font-family: "Karla", serif;
+    font-size: 14px;
+    background-color:#2F4858;
+    color: #C1CE9B;
+    border: 3px solid #F4BFDB;
+    border-radius: 7px;
+}
